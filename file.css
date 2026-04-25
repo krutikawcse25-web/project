@@ -7,63 +7,57 @@
 
 body {
     font-family: Arial, sans-serif;
-    background: #f4f6f9;
-    color: #333;
+    background: #fdf6ec;   
+    color: #3e2c23;        
 }
 
 header {
-    background: #0d1b2a;
-    color: white;
+    background: #4b2e2e;   
+    color: #fff8e7;        
     text-align: center;
     padding: 20px;
 }
 
-
 nav {
-    background: #1b263b;
+    background: #6f4e37;   
     text-align: center;
     padding: 10px;
 }
 
 nav a {
-    color: white;
+    color: #fff8e7;
     text-decoration: none;
     margin: 0 15px;
     font-weight: bold;
 }
 
 nav a:hover {
-    color: #00b4d8;
+    color: #d4a373;  
 }
-
 
 main {
     padding: 20px;
 }
 
-
 section {
     margin-bottom: 40px;
-    background: white;
+    background: #fff8e7;   
     padding: 15px;
     border-radius: 8px;
-    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    box-shadow: 0 0 6px rgba(0,0,0,0.1);
 }
-
 
 h2 {
     margin-bottom: 10px;
-    color: #1b263b;
+    color: #6f4e37;
 }
-
 
 article {
     margin-bottom: 15px;
     padding: 10px;
-    border-left: 4px solid #0077b6;
-    background: #f9f9f9;
+    border-left: 4px solid #a47148; 
+    background: #fefae0;            
 }
-
 
 table {
     width: 100%;
@@ -77,14 +71,13 @@ th, td {
 }
 
 th {
-    background: #1b263b;
-    color: white;
+    background: #4b2e2e;
+    color: #fff8e7;
 }
 
 td {
-    background: #e9ecef;
+    background: #faedcd;  
 }
-
 
 ul {
     margin-left: 20px;
@@ -94,19 +87,18 @@ ul li {
     margin: 8px 0;
 }
 
-
 a {
-    color: #0077b6;
+    color: #6f4e37;
 }
 
 a:hover {
     text-decoration: underline;
+    color: #a47148;
 }
 
-
 footer {
-    background: #0d1b2a;
-    color: white;
+    background: #4b2e2e;
+    color: #fff8e7;
     text-align: center;
     padding: 15px;
     margin-top: 20px;
