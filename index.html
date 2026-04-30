@@ -1,46 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Computer Science Department</title>
+
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
     <style>
-        body {
-            background: #fdf6ec;
-            color: #3e2c23;
-        }
-
-        .bg-brown {
-            background-color: #4b2e2e;
-            color: #fff8e7;
-        }
-
-        .bg-light-cream {
-            background-color: #fff8e7;
-        }
-
-        .card {
-            background: #fefae0;
-            border-left: 5px solid #a47148;
-        }
-
-        footer {
-            background: #4b2e2e;
-            color: #fff8e7;
-        }
+        .page { display: none; }
     </style>
 </head>
 
 <body>
 
-<header class="bg-brown text-center p-4">
+
+<header class="bg-brown text-center p-4 text-white">
     <h1>Computer Science Department</h1>
     <p>Welcome to Our Department Website</p>
 </header>
 
-<nav class="navbar navbar-expand-lg navbar-dark" style="background:#6f4e37;">
+
+<nav class="navbar navbar-expand navbar-dark bg-brown">
     <div class="container">
         <a class="navbar-brand" href="#">CS Dept</a>
 
@@ -50,153 +35,112 @@
 
         <div class="collapse navbar-collapse" id="menu">
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="#faculty">Faculty</a></li>
-                <li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
-                <li class="nav-item"><a class="nav-link" href="#timetable">Timetable</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="showPage('home')">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="showPage('faculty')">Faculty</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="showPage('research')">Research</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="showPage('timetable')">Timetable</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="showPage('contact')">Contact</a>
+                </li>
+
             </ul>
         </div>
     </div>
 </nav>
 
+
 <div class="container my-4">
 
-    <section id="faculty" class="mb-5">
-        <h2 class="mb-3">Faculty Directory</h2>
-        <div class="row g-3">
+    <div id="home" class="page">
+        <h2>Welcome</h2>
+        <p>This is the home page of Computer Science Department.</p>
+    </div>
 
-            <div class="col-md-4">
-                <div class="card p-3">
-                    <h5>Dr. S. Sharma</h5>
-                    <p>Artificial Intelligence</p>
-                </div>
-            </div>
+    <div id="faculty" class="page">
+        <h2>Faculty</h2>
+        <p>Dr. S. Sharma - AI</p>
+        <p>Prof. M. Mehta - Data Science</p>
+        <p>Dr. V. Verma - Cyber Security</p>
+    </div>
 
-            <div class="col-md-4">
-                <div class="card p-3">
-                    <h5>Prof. M. Mehta</h5>
-                    <p>Data Science</p>
-                </div>
-            </div>
+    <div id="research" class="page">
+        <h2>Research</h2>
+        <p>AI in Healthcare</p>
+        <p>Big Data Analytics</p>
+        <p>Blockchain Security</p>
+    </div>
 
-            <div class="col-md-4">
-                <div class="card p-3">
-                    <h5>Dr. V. Verma</h5>
-                    <p>Cyber Security</p>
-                </div>
-            </div>
+    <!-- TIMETABLE -->
+    <div id="timetable" class="page">
+        <h2>Timetable</h2>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Subjects</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Monday</td>
+                    <td>DSA, DBMS, OS</td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td>AI, ML, CN</td>
+                </tr>
+                <tr>
+                     <td>Wednesday</td>
+                      <td>Math, Physics, Chemistry</td>
+               </tr>
+<tr>
+                    <td>Thursday</td>
+                    <td>DSA, DBMS, OS</td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>AI, ML, CN</td>
+                </tr>
+<tr>
+                    <td>Saturday</td>
+                    <td>DSA, OS,CN</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
-        </div>
-    </section>
-
-    <section id="research" class="mb-5">
-        <h2 class="mb-3">Research Highlights</h2>
-        <div class="row g-3">
-
-            <div class="col-md-4">
-                <div class="card p-3">
-                    <h5>AI in Healthcare</h5>
-                    <p>Research on disease using AI.</p>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="card p-3">
-                    <h5>Big Data Analytics</h5>
-                    <p>Handling large datasets.</p>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="card p-3">
-                    <h5>Blockchain Security</h5>
-                    <p>Enhancing digital security.</p>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <section id="timetable" class="mb-5">
-        <h2 class="mb-3">Weekly Timetable</h2>
-
-        <div class="table-responsive">
-            <table class="table table-bordered text-center">
-                <thead class="bg-brown">
-                    <tr>
-                        <th>Day</th>
-                        <th>9-10</th>
-                        <th>10-11</th>
-                        <th>11-12</th>
-                        <th>12-1</th>
-                    </tr>
-                </thead>
-
-                <tbody class="bg-light-cream">
-                    <tr>
-                        <td>Monday</td>
-                        <td>DSA</td>
-                        <td>DBMS</td>
-                        <td>OS</td>
-                        <td>Break</td>
-                    </tr>
-                    <tr>
-                        <td>Tuesday</td>
-                        <td>AI</td>
-                        <td>ML</td>
-                        <td>CN</td>
-                        <td>Break</td>
-                    </tr>
-                    <tr>
-                        <td>Wednesday</td>
-                        <td>OS</td>
-                        <td>DBMS</td>
-                        <td>DSA</td>
-                        <td>Break</td>
-                    </tr>
-                    <tr>
-                        <td>Thursday</td>
-                        <td>CN</td>
-                        <td>AI</td>
-                        <td>ML</td>
-                        <td>Break</td>
-                    </tr>
-                    <tr>
-                        <td>Friday</td>
-                        <td>Project</td>
-                        <td>Lab</td>
-                        <td>Seminar</td>
-                        <td>Break</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </section>
-
-    <section class="mb-5">
-        <h2>Quick Links</h2>
-        <ul>
-            <li>Admissions</li>
-            <li>Courses Offered</li>
-            <li>Student Portal</li>
-            <li>Placement Cell</li>
-        </ul>
-    </section>
-
-    <section id="contact">
-        <h2>Contact Information</h2>
-        <p>Address: SB Jain College, Nagpur</p>
+    <!-- CONTACT -->
+    <div id="contact" class="page">
+        <h2>Contact</h2>
+        <p>SB Jain College, Nagpur</p>
         <p>Phone: +91 9876543210</p>
         <p>Email: csdept@gmail.com</p>
-    </section>
+    </div>
 
 </div>
 
-<footer class="text-center p-3">
+<!-- Footer -->
+<footer class="text-center p-3 bg-brown text-white">
     © 2026 Computer Science Department
 </footer>
 
+<!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="script.js"></script>
 
 </body>
 </html>
