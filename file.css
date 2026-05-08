@@ -1,10 +1,8 @@
-/* Colors */
 :root {
     --brown: #6f4e37;
     --cream: #fdf6ec;
 }
 
-/* Background helpers */
 .bg-brown {
     background-color: var(--brown);
 }
@@ -13,13 +11,11 @@
     background-color: var(--cream);
 }
 
-/* Headings */
 h2 {
     color: var(--brown);
     margin-bottom: 20px;
 }
 
-/* Cards */
 .card {
     border-radius: 10px;
     transition: 0.3s;
@@ -30,12 +26,10 @@ h2 {
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
-/* Navbar hover */
 .nav-link:hover {
     text-decoration: underline;
 }
 
-/* Table */
 .table th, .table td {
     vertical-align: middle;
 }
