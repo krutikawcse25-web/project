@@ -1,4 +1,3 @@
-// SPA Page switch function
 function showPage(pageId) {
     let pages = document.querySelectorAll('.page');
 
@@ -9,7 +8,6 @@ function showPage(pageId) {
     document.getElementById(pageId).style.display = "block";
 }
 
-// Default page load
 window.onload = function () {
     showPage('home');
 };
